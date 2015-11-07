@@ -9,7 +9,7 @@ eureka:
 
 foo: bar
 
-spring
+spring:
   cloud:
     services:
       registrationMethod: route
