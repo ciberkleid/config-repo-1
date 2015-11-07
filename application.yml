@@ -15,8 +15,8 @@ spring:
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
+    nonSecurePortEnabled: true
     nonSecurePort: 80
-
 ---
 spring:
   profiles: lattice
