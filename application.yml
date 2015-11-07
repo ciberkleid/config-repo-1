@@ -9,15 +9,19 @@ eureka:
 
 foo: bar
 
+spring
+  cloud:
+    services:
+      registrationMethod: route
 ---
 spring:
   profiles: cloud
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePortEnabled: false
-    securePortEnabled: true
-    nonSecurePort: 80
+#eureka:
+#  instance:
+#    hostname: ${vcap.application.uris[0]}
+#    nonSecurePortEnabled: false
+#    securePortEnabled: true
+#    nonSecurePort: 80
 ---
 spring:
   profiles: lattice
