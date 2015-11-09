@@ -1,2 +1,6 @@
 server:
   port: 7979
+
+security:
+  basic:
+    enabled: false

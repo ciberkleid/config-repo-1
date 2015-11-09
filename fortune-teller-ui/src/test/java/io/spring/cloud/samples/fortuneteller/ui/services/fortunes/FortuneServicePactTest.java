@@ -32,7 +32,7 @@ public class FortuneServicePactTest {
     @Rule
     public PactRule rule = new PactRule("localhost", 8080, this);
 
-    @Pact(state = "FortuneState", provider = "FortuneService", consumer = "FortuneUi")
+    @Pact(state = "FortuneState", provider = "FortuneService", consumer = "FortuneUI")
     public PactFragment createFragment(ConsumerPactBuilder.PactDslWithProvider.PactDslWithState builder) {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json;charset=UTF-8");
